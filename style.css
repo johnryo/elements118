@@ -15,10 +15,11 @@ body {
 
 h1 {
   color: #708090;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 400;
   text-align: center;
   border-bottom: 1px solid #eee;
+  margin-bottom: -0.75rem;
 }
 
 .container {
@@ -26,7 +27,8 @@ h1 {
   flex-direction: column;
   align-items: center;
   background-color: #fff;
-  width: 450px;
+  min-width: 380px;
+  height: 400px;
   padding: 1rem;
   box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.1);
 }
@@ -34,7 +36,7 @@ h1 {
 .element-number {
   color: #1f2430;
   height: 192px;
-  font-size: 8rem;
+  font-size: 6rem;
   font-weight: 400;
   margin-top: 2rem;
   margin-bottom: -0.5rem;
@@ -96,7 +98,7 @@ svg {
   width: 100%;
   padding: 0.5rem;
   margin: 0.5rem auto;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 400;
   font-family: Roboto, sans-serif;
   outline: none;
@@ -123,4 +125,24 @@ svg {
 
 .info-done {
   opacity: 0;
+}
+
+@media (min-width: 640px) {
+  .container {
+    min-width: 450px;
+    height: 450px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: -1rem;
+  }
+
+  .element-number {
+    font-size: 8rem;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+  }
 }
