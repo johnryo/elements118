@@ -5,11 +5,16 @@
 }
 
 body {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
   background-color: #db7093; /* palevioletred */
   font-family: 'Roboto', sans-serif;
 }
 
 h1 {
+  color: #708090;
   font-size: 3rem;
   font-weight: 400;
   text-align: center;
@@ -22,7 +27,6 @@ h1 {
   align-items: center;
   background-color: #fff;
   width: 450px;
-  margin: 5rem auto;
   padding: 1rem;
   box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.1);
 }
@@ -32,6 +36,8 @@ h1 {
   height: 192px;
   font-size: 8rem;
   font-weight: 400;
+  margin-top: 2rem;
+  margin-bottom: -0.5rem;
 }
 
 .element-data {
