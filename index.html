@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Periodic Table Review</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Element number</h1>
+      <p class="element-number"></p>
+      <div class="element-data">
+        <div id="info">
+          <span id="number"></span>
+          <span id="symbol"></span>
+          <span id="name"></span>
+          <!-- <span id="weight"></span> -->
+        </div>
+        <div class="check">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            width="1em"
+            height="1em"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-miterlimit="10"
+              stroke-width="32"
+              d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192Z"
+            />
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="32"
+              d="M352 176L217.6 336L160 272"
+            />
+          </svg>
+        </div>
+      </div>
+      <button id="next-element" class="btn"></button>
+      <div class="refresh-buttons">
+        <button id="start-over" class="btn">Start Over</button>
+        <button id="new-quiz" class="btn">New Quiz</button>
+      </div>
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
