@@ -8,7 +8,7 @@ body {
   display: grid;
   justify-items: center;
   align-items: center;
-  height: 100vh;
+  height: 100dvh;
   background-color: #db7093; /* palevioletred */
   font-family: 'Roboto', sans-serif;
 }
@@ -19,7 +19,7 @@ h1 {
   font-weight: 400;
   text-align: center;
   border-bottom: 1px solid #eee;
-  margin-bottom: -0.75rem;
+  margin-bottom: 1rem;
 }
 
 .container {
@@ -27,7 +27,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   background-color: #fff;
-  min-width: 380px;
+  min-width: 350px;
   height: 400px;
   padding: 1rem;
   box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.1);
@@ -38,8 +38,6 @@ h1 {
   height: 192px;
   font-size: 6rem;
   font-weight: 400;
-  margin-top: 2rem;
-  margin-bottom: -0.5rem;
 }
 
 .element-data {
@@ -49,7 +47,7 @@ h1 {
   gap: 1rem;
   width: 100%;
   background-color: rgb(255, 239, 213);
-  padding: 4px 8px;
+  padding: 0.25rem 0.5rem;
   margin-bottom: 1rem;
   border: 1px solid #eee;
   border-radius: 5px;
@@ -68,7 +66,7 @@ svg {
   color: blue;
   width: 24px;
   height: 24px;
-  margin-bottom: -5px;
+  margin-bottom: -4px;
 }
 
 #number {
@@ -105,7 +103,7 @@ svg {
   border: 1px solid transparent;
   border-radius: 10px;
   cursor: pointer;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   transition: all 0.2s;
 }
 
@@ -135,7 +133,7 @@ svg {
 
   h1 {
     font-size: 3rem;
-    margin-bottom: -1rem;
+    margin-bottom: 0.75rem;
   }
 
   .element-number {
