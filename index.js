@@ -3,12 +3,12 @@
 import elements from './elements.js';
 
 const elementNumber = document.querySelector('.element-number');
-const nextElement = document.getElementById('next-element');
+const nextElement = document.querySelector('.next-element');
 const startOver = document.getElementById('start-over');
 const newQuiz = document.getElementById('new-quiz');
 
 const elementData = document.querySelector('.element-data');
-const info = document.getElementById('info');
+const info = document.querySelector('.info');
 const number = document.getElementById('number');
 const symbol = document.getElementById('symbol');
 const name = document.getElementById('name');
