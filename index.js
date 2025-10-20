@@ -4,8 +4,8 @@ import elements from './elements.js';
 
 const elementNumber = document.querySelector('.element-number');
 const nextElement = document.querySelector('.next-element');
-const startOver = document.getElementById('start-over');
-const newQuiz = document.getElementById('new-quiz');
+const startOver = document.querySelector('.start-over');
+const newQuiz = document.querySelector('.new-quiz');
 
 const elementData = document.querySelector('.element-data');
 const info = document.querySelector('.info');
