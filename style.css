@@ -23,6 +23,7 @@ h1 {
   place-self: center;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   background-color: #fff;
   min-width: 350px;
@@ -38,7 +39,7 @@ h1 {
   padding-top: 1rem;
 }
 
-.element-data {
+.data-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,9 +57,22 @@ h1 {
   opacity: 0;
 }
 
-.check {
+.info .check {
   text-align: right;
   cursor: pointer;
+}
+
+.info #number {
+  margin-right: 0.5rem;
+}
+
+.info #symbol {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.info #name {
+  margin-right: 0.5rem;
 }
 
 svg {
@@ -66,26 +80,6 @@ svg {
   width: 24px;
   height: 24px;
   margin-bottom: -4px;
-}
-
-#number {
-  margin-right: 0.5rem;
-}
-
-#symbol {
-  font-weight: bold;
-  margin-right: 0.5rem;
-}
-
-#name {
-  margin-right: 0.5rem;
-}
-
-.refresh-buttons {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
 }
 
 .btn {
@@ -107,8 +101,15 @@ svg {
 }
 
 .btn:hover {
-  background-color: #ca3364ee;
+  background-color: #ca3364dd;
   cursor: pointer;
+}
+
+.refresh-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .no-more-elements {
@@ -136,10 +137,9 @@ svg {
 
   .element-number {
     font-size: 8rem;
-    padding-top: 1rem;
   }
 
-  .element-data {
+  .data-container {
     margin-top: 0;
   }
 

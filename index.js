@@ -7,12 +7,12 @@ const nextElement = document.querySelector('.next-element');
 const startOver = document.querySelector('.start-over');
 const newQuiz = document.querySelector('.new-quiz');
 
-const elementData = document.querySelector('.element-data');
+const dataContainer = document.querySelector('.data-container');
 const info = document.querySelector('.info');
-const number = document.getElementById('number');
-const symbol = document.getElementById('symbol');
-const name = document.getElementById('name');
-// const weight = document.getElementById('weight');
+const number = document.querySelector('#number');
+const symbol = document.querySelector('#symbol');
+const name = document.querySelector('#name');
+// const weight = document.querySelector('#weight');
 
 // MAIN
 let count, min, max, i;
@@ -33,7 +33,7 @@ function init() {
   number.textContent = 'Number';
   symbol.textContent = 'Symbol';
   name.textContent = 'Name';
-  // weight.textContent = 'Weight';
+  weight.textContent = 'Weight';
 }
 
 // Generate an array of unique random numbers
@@ -58,7 +58,7 @@ function showNextElement() {
     number.textContent = element[0];
     symbol.textContent = element[1];
     name.textContent = element[2];
-    // weight.textContent = element[3];
+    weight.textContent = element[3];
     i++;
   } else {
     elementNumber.innerHTML = '000';
@@ -72,12 +72,12 @@ function showNextElement() {
 nextElement.addEventListener('click', showNextElement);
 
 // Show element data
-elementData.addEventListener('mouseenter', () => {
+dataContainer.addEventListener('mouseenter', () => {
   info.style.opacity = 1;
 });
 
 // Hide element data
-elementData.addEventListener('mouseleave', () => {
+dataContainer.addEventListener('mouseleave', () => {
   info.style.opacity = 0;
 });
 
